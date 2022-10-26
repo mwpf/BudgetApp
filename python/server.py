@@ -1,5 +1,5 @@
 # source /Users/tnappy/node_projects/quickstart/python/bin/activate
-# Read env vars from .env file
+
 from plaid.exceptions import ApiException
 from plaid.model.payment_amount import PaymentAmount
 from plaid.model.payment_amount_currency import PaymentAmountCurrency
@@ -53,6 +53,8 @@ import json
 import time
 from dotenv import load_dotenv
 from werkzeug.wrappers import response
+
+# Read env vars from .env file
 load_dotenv()
 
 
