@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetApp | {{ title }}</title>
+
+    <!-- jQuery -->
+    <link rel="stylesheet" type="text/css" href="/static/lib/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/lib/jquery-confirm/dist/jquery-confirm.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/static/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/static/lib/mdb/css/mdb.min.css">
+
+    <!-- Semantic UI -->
+    <link rel="stylesheet" type="text/css" href="/static/lib/semantic-ui/components/dropdown.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/nice_admin.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
+    <!-- Box Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Modernizr -->
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+
+</head>
+
+<body>
+
+    <div class="l-navbar">
+        <nav>
+            <a href="" class="list-icon"><i class="bi bi-list"></i></a>
+            <a href="" class="active"><i class="bi bi-bar-chart-fill"></i></a>
+            <a href=""><i class="bi bi-envelope-fill"></i></a>
+            <a href=""><i class="bi bi-gear-fill"></i></a>
+            <a href=""><i class="bi bi-info-circle-fill"></i></a>
+        </nav>
+    </div>
+
+    <main role="main">
+
+        <div id="spinner-div" class="pt-5 justify-content-center loader-div">
+            <div class="spinner-border text-primary loader" role="status"></div>
+        </div>
+
+        {% block content %}{% endblock %}
+
+    </main>
+
+    <!-- jQuery -->
+    <script src="/static/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/static/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/static/lib/jquery-confirm/dist/jquery-confirm.min.js"></script>
+    <script src="/static/lib/jquery-validation/dist/jquery.validate.js"></script>
+
+    <script>
+
+        $(document).ready(function ()
+        {
+            // allow sementic-ui dropdown to be used
+            var bootstrapDropdown = $.fn.dropdown.noConflict();
+            $.fn.bootstrapDropdown = bootstrapDropdown;
+        });
+
+        $(window).on('load', function ()
+        {
+            HideLoader();
+        });
+
+        $(window).on('beforeunload', function ()
+        {
+            ShowLoader();
+        });
+
+        // Call this function to display the loader screen
+        function ShowLoader()
+        {
+            $('#spinner-div').addClass('d-flex');
+            $('#spinner-div').show();
+        }
+
+        // Call this function to hide the loader screen
+        function HideLoader()
+        {
+            $('#spinner-div').removeClass('d-flex');
+            $('#spinner-div').hide();
+        }
+
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="/static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Semantic UI -->
+    <script src="/static/lib/semantic-ui/components/dropdown.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script src="/static/lib/mdb/js/mdb.min.js"></script>
+
+    <!-- Misc -->
+    <script src="/static/scripts/respond.js"></script>
+
+    <!-- Render Scripts in View -->
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>

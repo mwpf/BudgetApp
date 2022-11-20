@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=IBM+Plex+Mono:wght@200&display=swap');
+
+.tooltip {
+    pointer-events: none !important;
+}
+
+/* #region Identity Styles */
+
+.form-group {
+    text-align: left;
+}
+
+.validation {
+    font-size: .8rem;
+}
+
+/* #endregion .NET Identity Styles */
+
+/* #region Generic */
+
+:root {
+    --lnavbar-width: 5rem;
+    --rcontent-width: 90%;
+    --overview-width: 18rem;
+    --white-color: #FAFAFA;
+    --dark-white: #d1d1d1;
+    --nav-width: 5rem;
+    --primary-color: #376798;
+    --secondary-color: #6AA8E5;
+    --grey-color: #2e2e2e;
+    --account-color: #969696;
+    --green-color: #63bfa3;
+    --red-color: #d46e8d;
+    --z-fixed: 100;
+    --sidebar-width: 19rem;
+    --header-height: 3rem;
+    --header-font: 'Alegreya Sans', sans-serif;
+    --body-font: 'Nunito', sans-serif;
+    --IBM-mono-font: 'IBM Plex Mono', monospace;
+    --Hubballi-font: 'Hubballi', monospace;
+    --normal-fontsize: 1rem;
+    --gradient: linear-grad(#376798, #6AA8E5);
+    --input-color: #f7f8fa;
+    --input-text-color: #9b9ea5;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    width: 100%;
+}
+
+    main .container-fluid {
+        padding: 0;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--Hubballi-font);
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+    h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+        font-size: .7em;
+        color: #899bbd;
+        font-weight: 400;
+    }
+
+input, label {
+    font-family: var(--Hubballi-font) !important;
+}
+
+.bi:hover {
+    cursor: pointer;
+}
+
+.content-container {
+    display: flex;
+}
+
+.btn-link {
+    color: #4f4f4f !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.jsgrid {
+    font-size: .8em !important;
+}
+
+.dropdown-menu::before {
+    border-bottom: 9px solid rgba(0, 0, 0, 0.2);
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 5%; /* position */
+    position: absolute;
+    top: -8px;
+}
+
+.dropdown-menu::after {
+    border-bottom: 8px solid #FFFFFF;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 5%; /* position */
+    position: absolute;
+    top: -7px;
+}
+
+label.error {
+    display: flex;
+    float: none;
+    color: #cc0000;
+    padding-left: .5em;
+    vertical-align: top;
+}
+
+/* #endregion Generic */
+
+/* #region l-navbar */
+
+.l-navbar {
+    height: 100vh;
+    /*border: 1px solid red;*/
+    width: var(--lnavbar-width);
+}
+
+    .l-navbar a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        line-height: 1.5rem;
+        margin: 2rem 0 2rem 0;
+        color: darkgrey;
+        font-size: 1em;
+    }
+
+    .l-navbar .active {
+        color: var(--grey-color);
+        border-left: 3px solid #000;
+        /*border-right: 3px solid #000;*/
+        box-sizing: border-box;
+        line-height: 1.5em;
+    }
+
+    .l-navbar a:hover {
+        color: var(--grey-color);
+    }
+
+    .l-navbar .list-icon {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 4rem;
+    }
+
+/* #endregion l-navbar */
+
+/* #region Overview */
+
+.overview {
+    height: 100vh;
+    width: var(--overview-width);
+    min-width: var(--overview-width);
+    max-width: 35rem;
+    background-color: var(--white-color);
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.sidebar-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2rem 0;
+}
+
+.title-heading {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.progress {
+    border-radius: 10px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+li {
+    display: flex;
+}
+
+.add-account {
+    float: right;
+    font-size: 1.1rem;
+}
+
+    .add-account:hover {
+        color: #000;
+    }
+
+#Accounts li:nth-child(-n+4) {
+    display: flex !important;
+}
+
+#Accounts li:nth-child(n+4) {
+    display: none;
+}
+
+.account-name {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--account-color);
+}
+
+.account-number {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.positive {
+    color: var(--green-color);
+}
+
+.negative {
+    color: var(--red-color);
+}
+
+.list-toggle-btn {
+    display: flex !important;
+}
+
+    .list-toggle-btn:hover {
+        cursor: pointer;
+    }
+
+    .list-toggle-btn span {
+        font-weight: bolder;
+    }
+
+/* #endregion Overview */
+
+/* #region Transactions */
+
+.transactions {
+    flex: 2;
+    margin: 2rem 4rem;
+}
+
+.transactions-title {
+    display: flex;
+    flex-direction: row;
+    align-items: end !important;
+    padding: 0 0 1rem 0;
+}
+
+    .transactions-title span {
+        font-size: 2rem;
+    }
+
+.transactions input {
+    background-color: var(--input-color) !important;
+}
+
+.transactions label {
+    color: var(--input-text-color);
+}
+
+.icon-grey {
+    color: var(--account-color);
+}
+
+#TransactionsTbl td {
+    padding: .75rem 0rem;
+}
+
+    #TransactionsTbl td p {
+        margin-bottom: 0;
+    }
+
+.transaction-date {
+    font-weight: bold !important;
+}
+
+.transaction-name {
+}
+
+.edit-transaction {
+    padding: 0 !important;
+}
+
+.food-drink {
+    color: red;
+}
+
+/* #endregion Transactions */
+
+/* #region Widgets */
+
+.widgets {
+    flex: 1;
+    margin: 1rem 1rem;
+}
+
+/* #endregion */
+
+/* #region Budget Form */
+
+.budget-container {
+    margin-top: 2rem;
+}
+
+.budget-header {
+    display: flex;
+    flex-direction: row;
+    align-items: end !important;
+}
+
+.income-form > .field {
+    padding: .5rem;
+}
+
+.divider--header {
+    margin: .2rem 0 1rem 0;
+}
+
+.edit-list-item {
+    position: absolute;
+    right: -10px;
+}
+
+/* #endregion */
+
+/* #region Modal */
+
+.modal-header:hover {
+    cursor: grab;
+}
+
+.modal-header:active {
+    cursor: grabbing;
+}
+
+/* #endregion */
+
+/*#region Loader CSS */
+
+#spinner-div {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999999;
+}
+
+.loader-div {
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 5rem;
+    height: 5rem;
+    color: rgba(0, 116, 186, 1) !important;
+}
+
+/*#endregion */

@@ -1,0 +1,2 @@
+C:\Users\jackr\Documents\localdev\BudgetApp\BudgetApp\obj\Any CPU\Debug\BudgetApp.pyproj.SuggestedBindingRedirects.cache
+C:\Users\jackr\Documents\localdev\BudgetApp\BudgetApp\obj\Any CPU\Debug\BudgetApp.pyproj.CoreCompileInputs.cache

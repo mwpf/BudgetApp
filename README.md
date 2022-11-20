@@ -2,16 +2,14 @@
 
 This repository was created to aid in the version control for our Software Engineering Capstone Project.
 
-
-
 ## Getting Started
 
 ### Prerequisites
 
-- NPM & NodeJS
-- Python 3 
+- Python 3.10 
+- Visual Studio
 
-### Installation
+### Installation for Development
 
 To get this project running, it requires some initial setup
 
@@ -29,66 +27,36 @@ To get this project running, it requires some initial setup
 
     - In the future, I will create a python script to automate this process but for now the scripts must be run manually.
 
-3. Finally, we can attempt to run the project.
+3. Next, verify that Python 3.10 is installed on your machine.
 
-    - To do this, open the project in VS Code and in a new terminal type the following commands:
-    
-    <br />
-    
-    ```sh
-    cd python
-    ```
+	- If it is not, go to <a href="https://www.python.org/downloads/">Python downloads page</a> and install the most recent version of Python 3.10
 
-    - If running for the first time:
+4. Next, open the Solution in Visual Studio (will not work in visual studio code)
 
-    <br />
+	- Next, find BudgetApp > BudgetApp > Python Environments
+	
+	- Create a new environment using Python 3.10
+	
+	- Make sure to install packages from requirements.txt
+	
+5. Once you have the necessary packages installed, open the DbContext class 
 
-    ```sh
-    pip3 install -r requirements.txt
-    ```
+	- You can find this in BudgetApp > BudgetApp > BudgetApp > models > DbContext.py
+	
+	- Find the 'SQLALCHEMY_DATABASE_URI' connection string.
 
-    - Next (you can skip to this command if not running for the first time):
+	- Change the Username and Password to reflect that of the user you created in the steps above.
+	
+	- You should not need to change anything else since the port should default to 3306 and your db name should be 'finance'
+	
+6. Finally, you should be good to run the project 
 
-    <br />
+## Contribution Instructions
 
-    ```sh
-    ./start.sh
-    ```
+- NOTES:
 
-    - This should start the backend of the project.
-    - To start the frontend, open a new terminal window and type the following commands:
-
-    <br />
-    
-    ```sh
-    cd frontend
-    ```
-
-    - If running for the first time:
-
-    <br />
-    
-    ```sh
-    npm install
-    ```
-
-    ```sh
-    npm ci --force
-    ```
-
-    - Next (you can skip to this command if not running for the first time):
-
-    <br />
-
-    ```sh
-    npm start
-    ```
-
-    - This should open a new tab in your default browser containing a running version of the project.
-
-## Usage
-
-- 
+	- Make sure if you install any additional packages to update the requirements.txt file.
+	- You can do this by right clicking your Python Environment > Generate requirements.txt > Update and add entries
 
 ## Authors
 
@@ -98,4 +66,4 @@ To get this project running, it requires some initial setup
 
 ## Acknowledgements
 
-- <a href=""></a>
+- <a href="https://www.nintyzeros.com/2019/11/flask-mysql-crud-restful-api.html">Help with Flask/SqlAlchemy Integration</a>
