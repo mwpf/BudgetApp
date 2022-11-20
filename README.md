@@ -30,6 +30,15 @@ To get this project running, it requires some initial setup
 3. Next, verify that Python 3.10 is installed on your machine.
 
 	- If it is not, go to <a href="https://www.python.org/downloads/">Python downloads page</a> and install the most recent version of Python 3.10
+	
+	- You might need to update the Python executable location in the configs
+	
+		- To do this, make sure you have python installed then press WIN key and search for Python ...
+		- Find Python 3.10, right click and Open File Location
+		- Find the Shortcut for Python 3.10, right click and select Properties
+		- Copy the Target Directory
+		- Next, in the solution in Visual Studio find BudgetApp > BudgetApp > env > pyvenv.cfg > open this file with a text editor
+		- Change the home directory to be the Target directory you copied earlier (make sure to remove the python.exe from the end)
 
 4. Next, open the Solution in Visual Studio (will not work in visual studio code)
 
@@ -38,6 +47,8 @@ To get this project running, it requires some initial setup
 	- Create a new environment using Python 3.10
 	
 	- Make sure to install packages from requirements.txt
+	
+		- Right click on the new environment you created and click 'Install from requirements.txt'
 	
 5. Once you have the necessary packages installed, open the DbContext class 
 
@@ -56,8 +67,10 @@ To get this project running, it requires some initial setup
 - NOTES:
 
 	- Make sure if you install any additional packages to update the requirements.txt file.
-	- You can do this by right clicking your Python Environment > Generate requirements.txt > Update and add entries
+		- You can do this by right clicking your Python Environment > Generate requirements.txt > Update and add entries
 
+	- <a href="https://endjin.com/blog/2020/07/debugging-web-apps-in-visual-studio-with-custom-browser-configurations">Change browser that Visual Studio runs web project in </a>
+	
 ## Authors
 
 - Jack Grantham
