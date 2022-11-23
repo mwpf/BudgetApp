@@ -44,7 +44,7 @@ USAGE:
 """
 
 # Template: 'mysql+pymysql://<mysql_username>:<mysql_password>@<mysql_host>:<mysql_port>/<mysql_db>'
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:rhgJeNBQBG$99@localhost:3306/finance'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:root@localhost:3306/finance'
 db = SQLAlchemy(app)
 
 # USER
