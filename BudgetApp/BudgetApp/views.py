@@ -18,10 +18,14 @@ import dateutil.parser as parser
 @app.route('/home')
 def home():
     # get list of accounts
-    accounts = account.query.all()
+    db_accounts = account.query.join(plaid_item).filter_by(user_id=1).all()
+    accounts_sch = account_schema(many=True)
+    accounts = accounts_sch.dump(db_accounts)
 
     # get list of transactions
-    transactions = transaction.query.all()
+    db_transactions = transaction.query.all()
+    transaction_sch = transaction_schema(many=True)
+    transactions = transaction_sch.dump(db_transactions)
 
     # renders the dashboard
     return render_template(
@@ -29,8 +33,8 @@ def home():
         title='Dashboard',
         month=datetime.now().month,
         year=datetime.now().year,
-        accounts = accounts,
-        transactions = transactions
+        accounts=accounts,
+        transactions=transactions
     )
 
 @app.route('/home/establish_item', methods = ['POST'])
@@ -123,7 +127,7 @@ def budget():
 
 @app.route('/dbcontext/items', methods=['GET'])
 def get_items():
-    get_items = plaid_item.query.all()
+    get_items = plaid_item.query.filter_by(user_id=1).all()
     item_schema = plaid_item_schema(many=True)
     items = item_schema.dump(get_items)
     return make_response(jsonify({"plaid_item": items}))
