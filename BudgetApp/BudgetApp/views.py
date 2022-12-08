@@ -15,6 +15,10 @@ import base64
 import dateutil.parser as parser
 
 @app.route('/')
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
 @app.route('/home')
 def home():
     # get list of accounts
