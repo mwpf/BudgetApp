@@ -18,7 +18,6 @@ from BudgetApp.forms import *
 app.config["SECRET_KEY"] = "secretkey"
 
 
-@app.route('/')
 @app.route('/register', methods=["GET", "POST"])
 def register():
     form = RegisterForm()
@@ -38,11 +37,11 @@ def register():
     return render_template('register.html',
                            title='register', form=form)
 
-
+@app.route('/')
 @app.route('/login')
 def login():
     return render_template('login.html',
-                           title='login')
+                           title='Login')
 
 
 @app.route('/home')
