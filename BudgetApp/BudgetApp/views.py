@@ -16,8 +16,12 @@ import dateutil.parser as parser
 
 
 @app.route('/')
-@app.route('/register')
+@app.route('/register', methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        print("Form data:")
+        print("fname: {}, lname: {}".format(request.form.get("fname"), request.form.get("lname")))
+        return  redirect(url_for("login"))
     return render_template('register.html',
                            title='register')
 
