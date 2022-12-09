@@ -30,6 +30,7 @@ def register():
         #                                                                   request.form.get("fname")), "success")
         print("Form data:")
         print("fname: {}, lname: {}".format(form.firstname.data, form.lastname.data))
+
         flash("registration successfully completed for user {},{}".format(form.firstname.data,
                                                                           form.lastname.data), "success")
 

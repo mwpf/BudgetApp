@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
@@ -44,20 +43,22 @@ USAGE:
 """
 
 # Template: 'mysql+pymysql://<mysql_username>:<mysql_password>@<mysql_host>:<mysql_port>/<mysql_db>'
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:root@localhost:3306/finance'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/finance'
 db = SQLAlchemy(app)
 
+
 # USER
-#region
+# region
 
 class user(db.Model):
     __tablename__ = "user"
 
-    user_id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    password = db.Column(db.String(255))
     email = db.Column(db.String(255))
-    first_name  = db.Column(db.String(255))
-    last_name  = db.Column(db.String(255))
-    active  = db.Column(db.Boolean)
+    first_name = db.Column(db.String(255))
+    last_name = db.Column(db.String(255))
+    active = db.Column(db.Boolean)
 
     def create(self):
         db.session.add(self)
@@ -67,9 +68,10 @@ class user(db.Model):
     def __init__(self, user_id, email, first_name, last_name, active):
         self.user_id = user_id
         self.email = email
-        self.first_name  = first_name
-        self.last_name  = last_name
-        self.active  = active
+        self.first_name = first_name
+        self.last_name = last_name
+        self.active = active
+
 
 class user_schema(SQLAlchemyAutoSchema):
     class Meta:
@@ -78,10 +80,11 @@ class user_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # PLAID ITEM
-#region
+# region
 
 class plaid_item(db.Model):
     __tablename__ = "plaid_item"
@@ -94,14 +97,15 @@ class plaid_item(db.Model):
     access_token = db.Column(db.String(255))
     created_by = db.Column(db.String(255))
     created_date_time = db.Column(db.DateTime)
-    active  = db.Column(db.Boolean)
+    active = db.Column(db.Boolean)
 
     def create(self):
         db.session.add(self)
         db.session.commit()
         return self
 
-    def __init__(self, item_id, user_id, institution_id, webhook, request_id, access_token, created_by, created_date_time, active):
+    def __init__(self, item_id, user_id, institution_id, webhook, request_id, access_token, created_by,
+                 created_date_time, active):
         self.item_id = item_id
         self.user_id = user_id
         self.institution_id = institution_id
@@ -112,6 +116,7 @@ class plaid_item(db.Model):
         self.created_date_time = created_date_time
         self.active = active
 
+
 class plaid_item_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = plaid_item
@@ -119,10 +124,11 @@ class plaid_item_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # ACCOUNT
-#region
+# region
 
 class account(db.Model):
     __tablename__ = "account"
@@ -148,7 +154,8 @@ class account(db.Model):
         db.session.commit()
         return self
 
-    def __init__(self, account_id, item_id, name, official_name, available_balance, current_balance, limit, iso_currency_code, last_updated_date_time, mask, type, 
+    def __init__(self, account_id, item_id, name, official_name, available_balance, current_balance, limit,
+                 iso_currency_code, last_updated_date_time, mask, type,
                  sub_type, verification_status, request_id, active):
         self.account_id = account_id
         self.item_id = item_id
@@ -166,6 +173,7 @@ class account(db.Model):
         self.request_id = request_id
         self.active = active
 
+
 class account_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = account
@@ -173,10 +181,11 @@ class account_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # CATEGORY
-#region
+# region
 
 class category(db.Model):
     __tablename__ = "category"
@@ -195,6 +204,7 @@ class category(db.Model):
         self.name = name
         self.active = active
 
+
 class category_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = category
@@ -202,10 +212,11 @@ class category_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # BUDGET
-#region
+# region
 
 class budget(db.Model):
     __tablename__ = "budget"
@@ -228,6 +239,7 @@ class budget(db.Model):
         self.year = year
         self.created_date_time = created_date_time
 
+
 class budget_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = budget
@@ -235,10 +247,11 @@ class budget_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # BUDGET ITEM TYPE
-#region
+# region
 
 class budget_item_type(db.Model):
     __tablename__ = "budget_item_type"
@@ -257,6 +270,7 @@ class budget_item_type(db.Model):
         self.name = name
         self.active = active
 
+
 class budget_item_type_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = budget_item_type
@@ -264,10 +278,11 @@ class budget_item_type_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # BUDGET ITEM
-#region
+# region
 
 class budget_item(db.Model):
     __tablename__ = "budget_item"
@@ -289,7 +304,8 @@ class budget_item(db.Model):
         db.session.commit()
         return self
 
-    def __init__(self, budget_item_id, budget_item_type_id, budget_id, fixed, due_date, name, description, projected_amount, actual_amount, category_id, sub_category_id):
+    def __init__(self, budget_item_id, budget_item_type_id, budget_id, fixed, due_date, name, description,
+                 projected_amount, actual_amount, category_id, sub_category_id):
         self.budget_item_id = budget_item_id
         self.budget_item_type_id = budget_item_type_id
         self.budget_id = budget_id
@@ -302,6 +318,7 @@ class budget_item(db.Model):
         self.category_id = category_id
         self.sub_category_id = sub_category_id
 
+
 class budget_item_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = budget_item
@@ -309,10 +326,11 @@ class budget_item_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # TRANSACTION
-#region
+# region
 
 class transaction(db.Model):
     __tablename__ = "transaction"
@@ -346,8 +364,10 @@ class transaction(db.Model):
         db.session.commit()
         return self
 
-    def __init__(self, transaction_id, account_id, amount, iso_currency_code, category_id, store_number, payer, payee, reference_number, by_order_of, 
-                 payment_method, payment_processor, reason, account_owner, name, original_description, date, pending, merchant_name, check_number, 
+    def __init__(self, transaction_id, account_id, amount, iso_currency_code, category_id, store_number, payer, payee,
+                 reference_number, by_order_of,
+                 payment_method, payment_processor, reason, account_owner, name, original_description, date, pending,
+                 merchant_name, check_number,
                  payment_channel, transaction_code, transaction_type):
         self.transaction_id = transaction_id
         self.account_id = account_id
@@ -373,6 +393,7 @@ class transaction(db.Model):
         self.transaction_code = transaction_code
         self.transaction_type = transaction_type
 
+
 class transaction_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = transaction
@@ -380,10 +401,11 @@ class transaction_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # TRANSACTION TYPE
-#region
+# region
 
 class transaction_type(db.Model):
     __tablename__ = "transaction_type"
@@ -402,6 +424,7 @@ class transaction_type(db.Model):
         self.name = name
         self.active = active
 
+
 class transaction_type_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = transaction_type
@@ -409,10 +432,11 @@ class transaction_type_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # TRANSACTION DETAIL
-#region
+# region
 
 class transaction_detail(db.Model):
     __tablename__ = "transaction_detail"
@@ -420,7 +444,7 @@ class transaction_detail(db.Model):
     transaction_detail_id = db.Column(db.Integer, primary_key=True)
     transaction_id = db.Column(db.String(255), db.ForeignKey('transaction.transaction_id'))
     transaction_type_id = db.Column(db.Integer, db.ForeignKey('transaction_type.transaction_type_id'))
-    budget_item_id = db.Column(db.Integer, db.ForeignKey('budget_item.budget_item_id'))		
+    budget_item_id = db.Column(db.Integer, db.ForeignKey('budget_item.budget_item_id'))
     custom_description = db.Column(db.String(255))
 
     def create(self):
@@ -432,8 +456,9 @@ class transaction_detail(db.Model):
         self.transaction_detail_id = transaction_detail_id
         self.transaction_id = transaction_id
         self.transaction_type_id = transaction_type_id
-        self.budget_item_id = budget_item_id	
+        self.budget_item_id = budget_item_id
         self.custom_description = custom_description
+
 
 class transaction_detail_schema(SQLAlchemyAutoSchema):
     class Meta:
@@ -442,10 +467,11 @@ class transaction_detail_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+
+# endregion
 
 # LOCATION
-#region
+# region
 
 class location(db.Model):
     __tablename__ = "location"
@@ -467,7 +493,8 @@ class location(db.Model):
         db.session.commit()
         return self
 
-    def __init__(self, location_id, transaction_id, address, city, region, postal_code, country, latitude, longitude, store_number, active):
+    def __init__(self, location_id, transaction_id, address, city, region, postal_code, country, latitude, longitude,
+                 store_number, active):
         self.location_id = location_id
         self.transaction_id = transaction_id
         self.address = address
@@ -480,6 +507,7 @@ class location(db.Model):
         self.store_number = store_number
         self.active = active
 
+
 class location_schema(SQLAlchemyAutoSchema):
     class Meta:
         model = location
@@ -487,7 +515,7 @@ class location_schema(SQLAlchemyAutoSchema):
         load_instance = True
         sqla_session = db.session
 
-#endregion
+# endregion
 
 # in case of using code-first, use this to create the appropriate tables defined above
 # db.create_all()
