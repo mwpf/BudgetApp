@@ -2,7 +2,7 @@
 Routes and views for the flask application.
 """
 
-from flask import Flask, jsonify, redirect, url_for, request, render_template
+from flask import Flask, jsonify, redirect, url_for, request, render_template, flash
 from datetime import date, datetime, timedelta
 from BudgetApp import app
 from BudgetApp.models.DbContext import *
@@ -14,6 +14,8 @@ import time
 import base64
 import dateutil.parser as parser
 
+app.config["SECRET_KEY"] = "secretkey"
+
 
 @app.route('/')
 @app.route('/register', methods=["GET", "POST"])
@@ -21,7 +23,8 @@ def register():
     if request.method == "POST":
         print("Form data:")
         print("fname: {}, lname: {}".format(request.form.get("fname"), request.form.get("lname")))
-        return  redirect(url_for("login"))
+        flash("registration successfully completed for user {},{}".format(request.form.get("fname"),request.form.get("fname")),"success")
+        return redirect(url_for("login"))
     return render_template('register.html',
                            title='register')
 
