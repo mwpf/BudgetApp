@@ -13,6 +13,7 @@ import os
 import time
 import base64
 import dateutil.parser as parser
+from BudgetApp.forms import *
 
 app.config["SECRET_KEY"] = "secretkey"
 
@@ -20,13 +21,20 @@ app.config["SECRET_KEY"] = "secretkey"
 @app.route('/')
 @app.route('/register', methods=["GET", "POST"])
 def register():
+    form = RegisterForm()
     if request.method == "POST":
+        # print("Form data:")
+        # print("fname: {}, lname: {}".format(request.form.get("fname"), request.form.get("lname")))
+        # flash("registration successfully completed for user {},{}".format(request.form.get("fname"),
+        #                                                                   request.form.get("fname")), "success")
         print("Form data:")
-        print("fname: {}, lname: {}".format(request.form.get("fname"), request.form.get("lname")))
-        flash("registration successfully completed for user {},{}".format(request.form.get("fname"),request.form.get("fname")),"success")
+        print("fname: {}, lname: {}".format(form.firstname.data, form.lastname.data))
+        flash("registration successfully completed for user {},{}".format(form.firstname.data,
+                                                                          form.lastname.data), "success")
+
         return redirect(url_for("login"))
     return render_template('register.html',
-                           title='register')
+                           title='register', form=form)
 
 
 @app.route('/login')
