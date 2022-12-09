@@ -22,7 +22,9 @@ app.config["SECRET_KEY"] = "secretkey"
 @app.route('/register', methods=["GET", "POST"])
 def register():
     form = RegisterForm()
-    if request.method == "POST":
+
+    # if request.method == "POST":
+    if form.validate_on_submit():
         # print("Form data:")
         # print("fname: {}, lname: {}".format(request.form.get("fname"), request.form.get("lname")))
         # flash("registration successfully completed for user {},{}".format(request.form.get("fname"),

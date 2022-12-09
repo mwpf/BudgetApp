@@ -76,6 +76,7 @@
                                 </div>
 
                                 <form method="POST" action="{{url_for('register')}}">
+                                    {{ form.csrf_token }}
                                     <div class="form-outline mb-4">
 <!--                                        <input type="text" id="fname" class="form-control" name="fname"/>-->
 <!--                                        <label class="form-label" for="fname">First Name</label>-->
