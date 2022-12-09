@@ -55,16 +55,16 @@
                             </div>
                             <div class="container">
                                 {% with messages = get_flashed_messages(with_categories=True) %}
-                                    {% if messages %}
-                                        {% for type, content in messages %}
-                                            <div class="alert alert-{{ type }} alert-dismissible my-4" role="alert">
-                                                <button class="close" type="button" data-dismiss="alert" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                {{ content }}
-                                            </div>
-                                        {% endfor %}
-                                    {% endif %}
+                                {% if messages %}
+                                {% for type, content in messages %}
+                                <div class="alert alert-{{ type }} alert-dismissible my-4" role="alert">
+                                    <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    {{ content }}
+                                </div>
+                                {% endfor %}
+                                {% endif %}
                                 {% endwith %}
                             </div>
                         </div>
@@ -75,46 +75,54 @@
                                     <h2 class="mt-1 mb-5 pb-1">Budget Tracker</h2>
                                 </div>
 
-                                <form method="POST" action="{{url_for('register')}}">
+                                <form method="POST" action="{{url_for('register')}}" novalidate>
                                     {{ form.csrf_token }}
-                                    <div class="form-outline mb-4">
-<!--                                        <input type="text" id="fname" class="form-control" name="fname"/>-->
-<!--                                        <label class="form-label" for="fname">First Name</label>-->
+                                    <div class="form-outline">
+                                        <!--                                        <input type="text" id="fname" class="form-control" name="fname"/>-->
+                                        <!--                                        <label class="form-label" for="fname">First Name</label>-->
                                         {{ form.firstname(class="form-control")}}
                                         {{ form.firstname.label(class="form-label") }}
+
                                     </div>
+                                    {% if form.firstname.errors %}
+                                    <ul>
+                                        {% for error in form.firstname.errors %}
+                                        <li class="small-text text-danger">{{error}}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
                                     <div class="form-outline mb-4">
-<!--                                        <input type="text" id="lname" class="form-control" name="lname"/>-->
-<!--                                        <label class="form-label" for="lname">Last Name</label>-->
+                                        <!--                                        <input type="text" id="lname" class="form-control" name="lname"/>-->
+                                        <!--                                        <label class="form-label" for="lname">Last Name</label>-->
                                         {{ form.lastname(class="form-control")}}
                                         {{ form.lastname.label(class="form-label") }}
                                     </div>
 
                                     <div class="form-outline mb-4">
-<!--                                        <input type="email" id="email" class="form-control" name="email"/>-->
-<!--                                        <label class="form-label" for="email">Email</label>-->
+                                        <!--                                        <input type="email" id="email" class="form-control" name="email"/>-->
+                                        <!--                                        <label class="form-label" for="email">Email</label>-->
                                         {{ form.email(class="form-control")}}
                                         {{ form.email.label(class="form-label") }}
                                     </div>
 
                                     <div class="form-outline mb-4">
-<!--                                        <input type="password" id="password" class="form-control" name="password"/>-->
-<!--                                        <label class="form-label" for="password">Password</label>-->
+                                        <!--                                        <input type="password" id="password" class="form-control" name="password"/>-->
+                                        <!--                                        <label class="form-label" for="password">Password</label>-->
                                         {{ form.password(class="form-control")}}
                                         {{ form.password.label(class="form-label") }}
                                     </div>
                                     <div class="form-outline mb-4">
-<!--                                        <input type="password" id="password2" class="form-control" name="password2"/>-->
-<!--                                        <label class="form-label" for="password2">Confirm Password</label>-->
+                                        <!--                                        <input type="password" id="password2" class="form-control" name="password2"/>-->
+                                        <!--                                        <label class="form-label" for="password2">Confirm Password</label>-->
                                         {{ form.confirmpassword(class="form-control")}}
                                         {{ form.confirmpassword.label(class="form-label") }}
                                     </div>
 
                                     <div class="text-center pt-1 mb-3 pb-1 d-grid">
-<!--                                        <button class="btn btn-primary btn-block fa-lg gradient mb-3" type="submit">-->
-<!--                                            Register-->
-<!--                                        </button>-->
-<!--                                        {{ form.submit(class="form-control col-12 btn btn-primary btn-block fa-lg gradient")}}-->
+                                        <!--                                        <button class="btn btn-primary btn-block fa-lg gradient mb-3" type="submit">-->
+                                        <!--                                            Register-->
+                                        <!--                                        </button>-->
+                                        <!--                                        {{ form.submit(class="form-control col-12 btn btn-primary btn-block fa-lg gradient")}}-->
                                         {{ form.submit(class="form-control btn gradient")}}
 
                                     </div>
