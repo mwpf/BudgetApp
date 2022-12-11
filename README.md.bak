@@ -69,9 +69,7 @@ To get this project running, it requires some initial setup
 	- Make sure if you install any additional packages to update the requirements.txt file.
 		- You can do this by right clicking your Python Environment > Generate requirements.txt > Update and add entries
 
-	- 	<a href="https://endjin.com/blog/2020/07/debugging-web-apps-in-visual-studio-with-custom-browser-configurations">
-			Change browser that Visual Studio runs web project in 
-		</a>
+	- <a href="https://endjin.com/blog/2020/07/debugging-web-apps-in-visual-studio-with-custom-browser-configurations">Change browser that Visual Studio runs web project in </a>
 	
 ## Authors
 

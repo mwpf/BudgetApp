@@ -1,0 +1,1990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\jackr\Desktop\publish</_PublishTargetUrl>
+    <History>True|2022-12-10T17:43:05.5369063Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="BudgetApp/.env">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/models/DbContext.py">
+      <publishTime>12/09/2022 17:05:52</publishTime>
+    </File>
+    <File Include="BudgetApp/models/forms.py">
+      <publishTime>12/10/2022 11:17:41</publishTime>
+    </File>
+    <File Include="BudgetApp/models/__init__.py">
+      <publishTime>11/14/2022 20:42:45</publishTime>
+    </File>
+    <File Include="BudgetApp/plaid.py">
+      <publishTime>12/08/2022 17:39:32</publishTime>
+    </File>
+    <File Include="BudgetApp/static/content/nice_admin.css">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/content/site.css">
+      <publishTime>12/08/2022 22:34:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/14/2022 20:55:00</publishTime>
+    </File>
+    <File Include="BudgetApp/static/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/14/2022 20:55:00</publishTime>
+    </File>
+    <File Include="BudgetApp/static/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/14/2022 20:55:00</publishTime>
+    </File>
+    <File Include="BudgetApp/static/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/14/2022 20:55:00</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-grid.rtl.css">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-utilities.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-utilities.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-utilities.min.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap.rtl.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap.rtl.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap.rtl.min.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.esm.js">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.esm.js.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.esm.min.js">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.esm.min.js.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/bootstrap/LICENSE">
+      <publishTime>11/17/2022 17:43:38</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/.gitattributes">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/.github/ISSUE_TEMPLATE.md">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/.gitignore">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/animations.html">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/bower.json">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/callback.html">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/css/jquery-confirm.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/css/jquery-confirm.less">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/demo.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/demo.js">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/bs3.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/bundled.css">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/bundled.js">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/fonts/fontawesome-webfont.eot">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/fonts/fontawesome-webfont.svg">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/fonts/fontawesome-webfont.ttf">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/fonts/fontawesome-webfont.woff">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/fonts/fontawesome-webfont.woff2">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/libs/fonts/FontAwesome.otf">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/demo/logo-name.svg">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/dist/jquery-confirm.min.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/dist/jquery-confirm.min.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/form.html">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/index.html">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/jquery-confirm.png">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/js/jquery-confirm.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/LICENSE">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/package.json">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/README.md">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/table.html">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/text.txt">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/themelayout.png">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-confirm/themes.html">
+      <publishTime>11/17/2022 17:43:39</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/AUTHORS.txt">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/external/jquery/jquery.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/images/ui-icons_444444_256x240.png">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/images/ui-icons_555555_256x240.png">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/images/ui-icons_777620_256x240.png">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/images/ui-icons_777777_256x240.png">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/images/ui-icons_cc0000_256x240.png">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/images/ui-icons_ffffff_256x240.png">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/index.html">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/jquery-ui.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/jquery-ui.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/jquery-ui.min.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/jquery-ui.min.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/jquery-ui.structure.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/jquery-ui.structure.min.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/jquery-ui.theme.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/jquery-ui.theme.min.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/LICENSE.txt">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-ui/package.json">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery-validation/LICENSE.md">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery/dist/jquery.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery/dist/jquery.min.js">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery/dist/jquery.min.map">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/jquery/LICENSE.txt">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/css/mdb.dark.min.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/css/mdb.dark.min.css.map">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/css/mdb.dark.rtl.min.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/css/mdb.dark.rtl.min.css.map">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/css/mdb.min.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/css/mdb.min.css.map">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/css/mdb.rtl.min.css">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/css/mdb.rtl.min.css.map">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/img/mdb-favicon.ico">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/index.html">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/js/mdb.min.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/js/mdb.min.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/License.pdf">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/README.txt">
+      <publishTime>11/17/2022 17:43:40</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/alert.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/alert.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/base-component.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/base-component.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/button.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/button.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/carousel.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/carousel.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/collapse.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/collapse.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dom/data.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dom/data.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dom/event-handler.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dom/event-handler.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dom/manipulator.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dom/manipulator.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dom/selector-engine.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dom/selector-engine.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dropdown.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/dropdown.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/modal.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/modal.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/offcanvas.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/offcanvas.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/popover.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/popover.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/scrollspy.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/scrollspy.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/tab.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/tab.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/toast.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/toast.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/tooltip.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/dist/tooltip.js.map">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/alert.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/base-component.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/button.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/carousel.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/collapse.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/dom/data.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/dom/event-handler.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/dom/manipulator.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/dom/selector-engine.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/dropdown.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/modal.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/offcanvas.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/popover.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/scrollspy.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/tab.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/toast.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/tooltip.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/util/backdrop.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/util/component-functions.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/util/focustrap.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/util/index.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/util/sanitizer.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/mdb-prefix/util/scrollbar.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/alert.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/base-component.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/button.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/carousel.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/collapse.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/dom/data.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/dom/event-handler.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/dom/manipulator.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/dom/selector-engine.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/dropdown.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/modal.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/offcanvas.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/popover.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/scrollspy.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/tab.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/toast.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/tooltip.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/util/backdrop.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/util/component-functions.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/util/focustrap.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/util/index.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/util/sanitizer.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/bootstrap/src/util/scrollbar.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/alert.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/button.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/carousel.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/dropdown.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/input.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/modal.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/popover.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/range.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/ripple.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/scrollspy.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/tab.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/toast.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/free/tooltip.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb.free.js">
+      <publishTime>11/17/2022 17:43:41</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/dom/data.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/dom/event-handler.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/dom/manipulator.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/dom/selector-engine.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/handlers/click-rail.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/handlers/drag-thumb.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/handlers/keyboard.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/handlers/mouse-wheel.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/handlers/touch.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/index.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/lib/class-names.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/lib/css.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/lib/dom.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/lib/event-manager.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/lib/util.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/process-scroll-diff.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/perfect-scrollbar/update-geometry.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/focusTrap.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/index.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/keycodes.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/sanitizer.js">
+      <publishTime>11/17/2022 17:43:42</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/scrollbar.js">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/stack.js">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/touch/index.js">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/touch/swipe.js">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/js/mdb/util/touch/touchUtil.js">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/bootstrap-grid.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/bootstrap-reboot.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/bootstrap-utilities.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/bootstrap.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_floating-labels.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_form-check.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_form-control.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_form-range.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_form-select.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_form-text.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_input-group.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_labels.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/forms/_validation.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_clearfix.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_colored-links.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_position.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_ratio.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_stacks.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_stretched-link.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_text-truncation.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_visually-hidden.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/helpers/_vr.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_alert.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_backdrop.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_border-radius.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_box-shadow.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_breakpoints.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_buttons.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_caret.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_clearfix.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_color-scheme.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_container.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_deprecate.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_forms.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_gradients.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_grid.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_image.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_list-group.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_lists.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_pagination.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_reset-text.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_resize.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_table-variants.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_text-truncate.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_transition.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_utilities.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/mixins/_visually-hidden.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/utilities/_api.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/vendor/_rfs.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_accordion.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_alert.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_badge.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_breadcrumb.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_button-group.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_buttons.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_card.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_carousel.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_close.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_containers.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_dropdown.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_forms.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_functions.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_grid.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_helpers.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_images.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_list-group.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_mixins.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_modal.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_nav.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_navbar.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_offcanvas.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_pagination.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_placeholders.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_popover.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_progress.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_reboot.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_root.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_spinners.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_tables.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_toasts.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_tooltip.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_transitions.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_type.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_utilities.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap-rtl-fix/_variables.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/bootstrap-grid.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/bootstrap-reboot.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/bootstrap-utilities.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/bootstrap.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_floating-labels.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_form-check.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_form-control.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_form-range.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_form-select.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_form-text.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_input-group.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_labels.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/forms/_validation.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_clearfix.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_colored-links.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_position.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_ratio.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_stacks.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_stretched-link.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_text-truncation.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_visually-hidden.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/helpers/_vr.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_alert.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_backdrop.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_border-radius.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_box-shadow.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_breakpoints.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_buttons.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_caret.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_clearfix.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_color-scheme.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_container.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_deprecate.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_forms.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_gradients.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_grid.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_image.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_list-group.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_lists.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_pagination.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_reset-text.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_resize.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_table-variants.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_text-truncate.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_transition.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_utilities.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/mixins/_visually-hidden.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/utilities/_api.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/vendor/_rfs.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_accordion.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_alert.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_badge.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_breadcrumb.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_button-group.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_buttons.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_card.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_carousel.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_close.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_containers.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_dropdown.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_forms.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_functions.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_grid.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_helpers.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_images.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_list-group.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_mixins.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_modal.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_nav.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_navbar.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_offcanvas.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_pagination.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_placeholders.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_popover.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_progress.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_reboot.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_root.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_spinners.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_tables.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_toasts.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_tooltip.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_transitions.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_type.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_utilities.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/bootstrap/_variables.scss">
+      <publishTime>11/17/2022 17:43:44</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/custom/_styles.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/custom/_variables.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/forms/_form-check.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/forms/_form-control.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/forms/_form-file.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/forms/_form-range.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/forms/_form-select.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/forms/_input-group.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/forms/_validation.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/mixins/_buttons.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/mixins/_ripple.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/mixins/_table-variants.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_accordion.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_alert.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_badge.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_breadcrumb.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_button-group.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_buttons.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_card.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_carousel.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_close.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_colors.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_deprecated.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_dropdown.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_flag.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_functions.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_images.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_list-group.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_mixins.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_modal.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_nav.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_navbar.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_pagination.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_popover.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_progress.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_range.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_reboot.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_ripple.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_root.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_scrollspy.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_shadows.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_tables.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_toasts.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_tooltip.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_type.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_utilities.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/free/_variables.scss">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/mdb/src/scss/mdb.free.scss">
+      <publishTime>11/17/2022 17:43:43</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/.versions">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/accordion.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/accordion.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/accordion.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/accordion.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/ad.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/ad.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/api.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/api.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/breadcrumb.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/breadcrumb.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/button.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/button.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/card.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/card.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/checkbox.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/checkbox.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/checkbox.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/checkbox.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/colorize.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/colorize.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/comment.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/comment.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/container.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/container.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/dimmer.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/dimmer.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/dimmer.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/dimmer.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/divider.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/divider.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/dropdown.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/dropdown.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/dropdown.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/dropdown.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/embed.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/embed.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/embed.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/embed.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/feed.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/feed.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/flag.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/flag.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/form.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/form.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/form.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/form.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/grid.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/grid.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/header.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/header.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/icon.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/icon.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/image.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/image.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/input.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/input.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/item.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/item.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/label.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/label.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/list.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/list.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/loader.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/loader.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/menu.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/menu.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/message.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/message.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/modal.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/modal.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/modal.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/modal.min.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/nag.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/nag.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/nag.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/nag.min.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/placeholder.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/placeholder.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/popup.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/popup.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/popup.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/popup.min.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/progress.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/progress.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/progress.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/progress.min.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/rail.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/rail.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/rating.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/rating.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/rating.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/rating.min.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/reset.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/reset.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/reveal.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/reveal.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/search.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/search.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/search.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/search.min.js">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/segment.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/segment.min.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/shape.css">
+      <publishTime>11/17/2022 17:43:47</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/shape.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/shape.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/shape.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/sidebar.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/sidebar.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/sidebar.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/sidebar.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/site.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/site.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/site.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/site.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/state.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/state.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/statistic.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/statistic.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/step.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/step.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/sticky.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/sticky.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/sticky.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/sticky.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/tab.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/tab.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/tab.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/tab.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/table.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/table.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/transition.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/transition.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/transition.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/transition.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/video.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/video.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/video.min.css">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/video.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/visibility.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/visibility.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/visit.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/components/visit.min.js">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/LICENSE">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/package.js">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/package.json">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/README.md">
+      <publishTime>11/17/2022 17:43:45</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/semantic.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/semantic.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/semantic.min.css">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/semantic.min.js">
+      <publishTime>11/17/2022 17:43:46</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/brand-icons.eot">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/brand-icons.svg">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/brand-icons.ttf">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/brand-icons.woff">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/brand-icons.woff2">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/icons.eot">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/icons.otf">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/icons.svg">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/icons.ttf">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/icons.woff">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/icons.woff2">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/outline-icons.eot">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/outline-icons.svg">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/outline-icons.ttf">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/outline-icons.woff">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/fonts/outline-icons.woff2">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/lib/semantic-ui/themes/default/assets/images/flags.png">
+      <publishTime>11/17/2022 17:43:48</publishTime>
+    </File>
+    <File Include="BudgetApp/static/repos/plaid_link.js">
+      <publishTime>11/19/2022 16:48:16</publishTime>
+    </File>
+    <File Include="BudgetApp/static/scripts/modernizr-2.6.2.js">
+      <publishTime>11/14/2022 20:55:00</publishTime>
+    </File>
+    <File Include="BudgetApp/static/scripts/respond.js">
+      <publishTime>11/14/2022 20:55:00</publishTime>
+    </File>
+    <File Include="BudgetApp/static/scripts/respond.min.js">
+      <publishTime>11/14/2022 20:55:00</publishTime>
+    </File>
+    <File Include="BudgetApp/static/scripts/_references.js">
+      <publishTime>11/14/2022 20:55:00</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/budget.html">
+      <publishTime>12/08/2022 23:13:22</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/configuration.html">
+      <publishTime>12/09/2022 13:44:01</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/help.html">
+      <publishTime>12/09/2022 13:44:15</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/index.html">
+      <publishTime>12/06/2022 20:24:24</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/layout.html">
+      <publishTime>12/09/2022 21:06:57</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/login.html">
+      <publishTime>12/09/2022 16:40:20</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/registration.html">
+      <publishTime>12/09/2022 16:53:32</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/_expense.html">
+      <publishTime>12/08/2022 22:18:38</publishTime>
+    </File>
+    <File Include="BudgetApp/templates/_income.html">
+      <publishTime>12/09/2022 14:18:02</publishTime>
+    </File>
+    <File Include="BudgetApp/views.py">
+      <publishTime>12/09/2022 21:17:58</publishTime>
+    </File>
+    <File Include="BudgetApp/__init__.py">
+      <publishTime>12/09/2022 17:01:46</publishTime>
+    </File>
+    <File Include="db_init.sql">
+      <publishTime>12/08/2022 17:39:32</publishTime>
+    </File>
+    <File Include="requirements.txt">
+      <publishTime>12/10/2022 11:19:04</publishTime>
+    </File>
+    <File Include="runserver.py">
+      <publishTime>11/17/2022 17:38:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

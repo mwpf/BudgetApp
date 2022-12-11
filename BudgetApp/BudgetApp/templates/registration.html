@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- #region Registration -->
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5">
+
+                            <form id="RegistrationForm" action="{{ url_for('register') }}" method="post" autocomplete="off">
+
+                                <h2 class="fw-bold mb-5 text-uppercase">Register</h2>
+
+                                {{ form.hidden_tag() }}
+
+                                <div class="form-group mb-4">
+                                    <div class="form-outline form-white">
+                                        {{ form.first_name(class='form-control') }}
+                                        {{ form.first_name.label(class='form-label') }}
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <div class="form-outline form-white">
+                                        {{ form.last_name(class='form-control') }}
+                                        {{ form.last_name.label(class='form-label') }}
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <div class="form-outline form-white">
+                                        {{ form.email(class='form-control', size=64) }}
+                                        {{ form.email.label(class='form-label') }}
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <div class="form-outline form-white">
+                                        {{ form.password(class='form-control', size=32) }}
+                                        {{ form.password.label(class='form-label') }}
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <div class="form-outline form-white">
+                                        {{ form.password2(class='form-control', size=32) }}
+                                        {{ form.password2.label(class='form-label') }}
+                                    </div>
+                                </div>
+
+                                <button id="RegisterBtn" type="submit" class="btn btn-outline-light btn-lg px-5">Register</button>
+
+                            </form>
+
+                        </div>
+
+                        <div>
+                            <p class="mb-0">Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- #endregion Registration -->
+{% endblock %}
+
+{% block scripts %}
+
+<script type="text/javascript">
+
+</script>
+
+{% endblock %}

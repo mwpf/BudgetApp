@@ -2,11 +2,12 @@ USE finance;
 
 CREATE TABLE IF NOT EXISTS user
 (
-	user_id INT NOT NULL,
+	user_id INT NOT NULL AUTO_INCREMENT,
 	email VARCHAR(255) NOT NULL,
 	first_name VARCHAR(255) NOT NULL,
 	last_name VARCHAR(255) NOT NULL,
 	active BOOLEAN NOT NULL,
+	password_hash VARCHAR(255) NOT NULL,
 	CONSTRAINT pk_user PRIMARY KEY (user_id)
 );
 
@@ -48,7 +49,7 @@ CREATE TABLE IF NOT EXISTS account
 
 CREATE TABLE IF NOT EXISTS category
 (
-	category_id INT NOT NULL,
+	category_id INT NOT NULL AUTO_INCREMENT,
 	name VARCHAR(255) NOT NULL,
 	active BOOLEAN NOT NULL,
 	CONSTRAINT pk_category PRIMARY KEY (category_id)
@@ -56,7 +57,7 @@ CREATE TABLE IF NOT EXISTS category
 
 CREATE TABLE IF NOT EXISTS budget
 (
-	budget_id INT NOT NULL,
+	budget_id INT NOT NULL AUTO_INCREMENT,
 	user_id INT NOT NULL,
 	month VARCHAR(10) NOT NULL,
 	year VARCHAR(4) NOT NULL,
@@ -67,7 +68,7 @@ CREATE TABLE IF NOT EXISTS budget
 
 CREATE TABLE IF NOT EXISTS budget_item_type
 (
-	budget_item_type_id INT NOT NULL,
+	budget_item_type_id INT NOT NULL AUTO_INCREMENT,
 	name VARCHAR(255) NOT NULL,
 	active BOOLEAN NOT NULL,
 	CONSTRAINT pk_budget_item_type PRIMARY KEY (budget_item_type_id)
@@ -75,17 +76,17 @@ CREATE TABLE IF NOT EXISTS budget_item_type
 
 CREATE TABLE IF NOT EXISTS budget_item
 (
-	budget_item_id INT NOT NULL,
+	budget_item_id INT NOT NULL AUTO_INCREMENT,
 	budget_item_type_id INT NOT NULL,
 	budget_id INT NOT NULL,
-	fixed BOOLEAN NOT NULL,
-	due_date DATE NOT NULL,
+	fixed BOOLEAN NULL DEFAULT 0,
+	due_date DATE NULL,
 	name VARCHAR(255) NOT NULL,
-	description VARCHAR(255) NOT NULL,
+	description VARCHAR(255) NULL,
 	projected_amount DECIMAL NOT NULL,
-	actual_amount DECIMAL NOT NULL,
-	category_id INT NOT NULL,
-	sub_category_id INT NOT NULL,
+	actual_amount DECIMAL NULL,
+	category_id INT NULL,
+	sub_category_id INT NULL,
 	CONSTRAINT pk_budget_item PRIMARY KEY (budget_item_id),
     CONSTRAINT fk_budget_item_budget FOREIGN KEY (budget_id) REFERENCES budget (budget_id),
 	CONSTRAINT fk_budget_item_budget_item_type FOREIGN KEY (budget_item_type_id) REFERENCES budget_item_type (budget_item_type_id),
@@ -124,7 +125,7 @@ CREATE TABLE IF NOT EXISTS transaction
 
 CREATE TABLE IF NOT EXISTS transaction_type
 (
-	transaction_type_id INT NOT NULL,
+	transaction_type_id INT NOT NULL AUTO_INCREMENT,
 	name VARCHAR(255) NOT NULL,
 	active BOOLEAN NOT NULL,
 	CONSTRAINT pk_transaction_type PRIMARY KEY (transaction_type_id)
@@ -132,7 +133,7 @@ CREATE TABLE IF NOT EXISTS transaction_type
 
 CREATE TABLE IF NOT EXISTS transaction_detail
 (
-	transaction_detail_id INT NOT NULL,
+	transaction_detail_id INT NOT NULL AUTO_INCREMENT,
 	transaction_id VARCHAR(255) NOT NULL,
 	transaction_type_id INT NOT NULL,
 	budget_item_id INT NOT NULL,		
@@ -145,7 +146,7 @@ CREATE TABLE IF NOT EXISTS transaction_detail
 
 CREATE TABLE IF NOT EXISTS location
 (
-	location_id INT NOT NULL,
+	location_id INT NOT NULL AUTO_INCREMENT,
 	transaction_id VARCHAR(255) NOT NULL,
 	address VARCHAR(255) NOT NULL,
 	city VARCHAR(255) NOT NULL,

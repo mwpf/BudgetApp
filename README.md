@@ -80,3 +80,5 @@ To get this project running, it requires some initial setup
 ## Acknowledgements
 
 - <a href="https://www.nintyzeros.com/2019/11/flask-mysql-crud-restful-api.html">Help with Flask/SqlAlchemy Integration</a>
+
+- <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iii-web-forms">Flask Mega Tutorial</a>
