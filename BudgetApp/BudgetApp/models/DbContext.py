@@ -327,7 +327,8 @@ class budget_item_schema(SQLAlchemyAutoSchema):
 class transaction(db.Model):
     __tablename__ = "transaction"
 
-    transaction_id = db.Column(db.String(255), primary_key=True)
+    transaction_id = db.Column(db.Integer, primary_key=True)
+    plaid_transaction_id = db.Column(db.String(255))
     account_id = db.Column(db.String(255), db.ForeignKey('account.account_id'))
     amount = db.Column(db.Float)
     iso_currency_code = db.Column(db.String(255))
@@ -417,7 +418,7 @@ class transaction_detail(db.Model):
     __tablename__ = "transaction_detail"
 
     transaction_detail_id = db.Column(db.Integer, primary_key=True)
-    transaction_id = db.Column(db.String(255), db.ForeignKey('transaction.transaction_id'))
+    transaction_id = db.Column(db.Integer, db.ForeignKey('transaction.transaction_id'))
     transaction_type_id = db.Column(db.Integer, db.ForeignKey('transaction_type.transaction_type_id'))
     budget_item_id = db.Column(db.Integer, db.ForeignKey('budget_item.budget_item_id'))		
     custom_description = db.Column(db.String(255))

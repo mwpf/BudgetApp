@@ -96,7 +96,8 @@ CREATE TABLE IF NOT EXISTS budget_item
 
 CREATE TABLE IF NOT EXISTS transaction
 (
-	transaction_id VARCHAR(255) NOT NULL,
+	transaction_id int NOT NULL AUTO_INCREMENT,
+	plaid_transaction_id VARCHAR(255) NULL,
 	account_id VARCHAR(255) NOT NULL,
 	amount DECIMAL NULL,
 	iso_currency_code VARCHAR(255) NULL,
@@ -134,10 +135,10 @@ CREATE TABLE IF NOT EXISTS transaction_type
 CREATE TABLE IF NOT EXISTS transaction_detail
 (
 	transaction_detail_id INT NOT NULL AUTO_INCREMENT,
-	transaction_id VARCHAR(255) NOT NULL,
-	transaction_type_id INT NOT NULL,
-	budget_item_id INT NOT NULL,		
-	custom_description VARCHAR(255) NOT NULL,
+	transaction_id INT NOT NULL,
+	transaction_type_id INT NULL,
+	budget_item_id INT NULL,		
+	custom_description VARCHAR(255) NULL,
 	CONSTRAINT pk_transaction_detail PRIMARY KEY (transaction_detail_id),
 	CONSTRAINT fk_transaction_detail_transaction FOREIGN KEY (transaction_id) REFERENCES transaction(transaction_id),
 	CONSTRAINT fk_transaction_detail_transaction_type FOREIGN KEY (transaction_type_id) REFERENCES transaction_type(transaction_type_id),

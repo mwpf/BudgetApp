@@ -19,6 +19,7 @@ from plaid.model.asset_report_user import AssetReportUser
 from plaid.model.asset_report_get_request import AssetReportGetRequest
 from plaid.model.asset_report_pdf_get_request import AssetReportPDFGetRequest
 from plaid.model.auth_get_request import AuthGetRequest
+from plaid.model.transactions_get_request import TransactionsGetRequest
 from plaid.model.transactions_sync_request import TransactionsSyncRequest
 from plaid.model.identity_get_request import IdentityGetRequest
 from plaid.model.investments_transactions_get_request_options import InvestmentsTransactionsGetRequestOptions
@@ -50,6 +51,7 @@ import plaid
 import os
 import time
 import base64
+from datetime import date, timedelta
 
 # UTILITIES
 #region
@@ -479,8 +481,8 @@ def get_accounts(accessToken):
 
 # Retrieve Transactions for an Item
 # https://plaid.com/docs/#transactions
-@app.route('/api/transactions', methods=['GET'])
-def get_transactions(accessToken):
+@app.route('/api/transactions_sync', methods=['GET'])
+def get_transactions_sync(accessToken):
     # Set cursor to empty to receive all historical updates
     cursor = ''
 
@@ -509,6 +511,29 @@ def get_transactions(accessToken):
         # Return the 8 most recent transactions
         # TODO : change this to return transactions from the last 30 days
         latest_transactions = sorted(added, key=lambda t: t['date'])[-8:]
+        return jsonify({'transactions': latest_transactions})
+
+    except plaid.ApiException as e:
+        error_response = format_error(e)
+        return jsonify(error_response)
+
+# Retrieve Transactions for an Item
+# https://plaid.com/docs/#transactions
+@app.route('/api/transactions', methods=['GET'])
+def get_transactions(accessToken):
+    transactions = []
+    try:
+        request = TransactionsGetRequest(
+            access_token=accessToken,
+            start_date=date.today() - timedelta(days=30),
+            end_date=date.today()
+        )
+        response = client.transactions_get(request).to_dict()
+        transactions.extend(response['transactions'])
+        pretty_print_response(response)
+
+        # Return the 8 most recent transactions
+        latest_transactions = sorted(transactions, key=lambda t: t['date'])[-8:]
         return jsonify({'transactions': latest_transactions})
 
     except plaid.ApiException as e:

@@ -762,6 +762,7 @@
     <Content Include="BudgetApp\templates\registration.html" />
     <Content Include="BudgetApp\templates\_expense.html" />
     <Content Include="BudgetApp\templates\_income.html" />
+    <Content Include="BudgetApp\templates\_transaction.html" />
     <Content Include="db_init.sql" />
     <Content Include="requirements.txt" />
     <Content Include="BudgetApp\static\content\site.css" />
@@ -777,15 +778,6 @@
     <Content Include="BudgetApp\templates\layout.html" />
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="env\">
-      <Id>env</Id>
-      <Version>3.10</Version>
-      <Description>env (Python 3.10 (64-bit))</Description>
-      <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
-      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X64</Architecture>
-    </Interpreter>
     <Interpreter Include="env_py9\">
       <Id>env_py9</Id>
       <Version>3.9</Version>

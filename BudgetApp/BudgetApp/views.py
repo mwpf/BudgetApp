@@ -2,7 +2,7 @@
 Routes and views for the flask application.
 """
 
-from flask import Flask, jsonify, redirect, url_for, request, render_template, flash
+from flask import Flask, jsonify, redirect, url_for, request, render_template, flash, session
 from flask_login import current_user, login_user, logout_user, login_required
 from datetime import date, datetime, timedelta
 from werkzeug.urls import url_parse
@@ -46,11 +46,6 @@ def logout():
     logout_user()
     return redirect(url_for('home'))
 
-@app.route('/forgot_password')
-def forgot_password():
-    # TODO : implement
-    return 
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
@@ -83,7 +78,7 @@ def register():
 @app.route('/index', methods=['GET'])
 @login_required
 def home():
-
+    session.pop('_flashes', None)
     user_id = current_user.get_id()
     
     # get list of accounts
@@ -157,7 +152,7 @@ def establish_item():
     for txn in transaction_response.json['transactions']:
         # define new Transaction object and insert into db
         txn_obj = transaction(
-            transaction_id = txn['transaction_id'],
+            plaid_transaction_id = txn['transaction_id'],
             account_id = txn['account_id'],
             amount = txn['amount'],
             iso_currency_code = txn['iso_currency_code'],
@@ -185,6 +180,49 @@ def establish_item():
 
     return redirect(url_for('home'))
 
+@app.route('/manual_transaction', methods=['GET', 'POST'])
+def manual_transaction():
+    
+    # get optional arguments
+    transaction_id = request.args.get('transaction_id')
+
+    if transaction_id is not None: 
+        form.transaction_id.data = transaction_id
+
+    form = TransactionForm(request.form)
+    
+    # populate account choices
+    form.account_id.choices = [(a.account_id, a.name) for a in account.query.join(plaid_item).filter_by(user_id=current_user.get_id()).all()]
+
+    if request.method == 'POST':
+        if form.is_submitted():
+            if request.form["transaction_id"] is not None and not request.form["transaction_id"] == "":
+                txn = transaction.query.get(request.form["transaction_id"])
+                form.populate_obj(txn)
+                txn.update()
+            else:
+                # create income budget item and insert into db
+                txn = transaction(
+                    account_id = request.form["account_id"],
+                    name = request.form["name"],
+                    amount = request.form["amount"],
+                    date = request.form["date"]
+                )
+                txn.create()
+
+            # TODO : create transaction detail for the category/subcategory selected
+
+        return redirect(url_for('home'))
+
+    else:
+        # if transaction id was specified
+        if transaction_id is not None:
+            # grab the transaction from the database
+            txn = transaction.query.get(transaction_id)
+            form = TransactionForm(obj=txn)
+
+        return render_template('_transaction.html', form=form)
+    
 #endregion
 
 # BUDGET 

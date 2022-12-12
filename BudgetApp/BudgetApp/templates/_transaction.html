@@ -1,0 +1,79 @@
+
+<div class="modal-dialog" role="document">
+
+    <form id="SaveTransactionForm" action="{{ url_for('manual_transaction') }}" method="post" autocomplete="off">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title" id="ModalLabel">Create/Edit Transaction</h4>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+
+                    {{ form.hidden_tag() }}
+
+                    <div class="col-md-12 mb-4">
+                        <div class="">
+                            {{ form.account_id.label(class='') }}
+                            {{ form.account_id(class='ui fluid search dropdown') }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mb-4">
+                        <div class="form-outline">
+                            {{ form.name(class='form-control') }}
+                            {{ form.name.label(class='form-label') }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                            {{ form.amount(class='form-control', type='number', step='0.01') }}
+                            {{ form.amount.label(class='form-label') }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-outline">
+                            {{ form.date(class='form-control', type='date') }}
+                            {{ form.date.label(class='form-label') }}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-default" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                <button id="" type="submit" class="btn btn-primary">Save</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+
+<script>
+
+    $(function ()
+    {
+        $('#account_id').dropdown(
+        {
+            "clearable": true,
+            "forceSelection": false,
+        });
+    });
+
+    $(function ()
+    {
+        $('button[data-bs-dismiss="modal"]').click(function (e)
+        {
+            $('#Modal').modal('toggle');
+        });
+    });
+
+</script>

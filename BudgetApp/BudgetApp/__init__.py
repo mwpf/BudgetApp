@@ -2,7 +2,7 @@
 The flask application package.
 """
 
-from flask import Flask
+from flask import Flask, session
 from flask_bootstrap import Bootstrap5
 from flask_login import LoginManager
 
